@@ -1,0 +1,144 @@
+/* Reset + Global */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+  text-align: justify;
+}
+
+body {
+  background: #f9f9f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #333;
+  color: white;
+  padding: 10px 30px;
+  flex-wrap: wrap;
+  min-height: 100px; 
+}
+
+header .logo img {
+  width: 350px;
+  
+  height: auto;
+}
+#hero {
+  width: 100%;
+  text-align: center; /* centers the image */
+  background: #fff;   /* optional: background behind image */
+  padding: 0;         /* remove extra padding */
+}
+
+#hero img {
+  max-width: 100%;   /* fit inside page width */
+  height: auto;      /* keep aspect ratio */
+  display: block;
+  margin: 0 auto;
+}
+
+header .header-content {
+  text-align: right;
+}
+
+/* Navigation */
+nav {
+  background: #444;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.menu li {
+  position: relative;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  background: #666;
+}
+
+/* Dropdown */
+.submenu-content {
+  display: none;
+  position: absolute;
+  background: #444;
+  min-width: 200px;
+  z-index: 1000;
+}
+
+.submenu-content li a {
+  padding: 10px;
+}
+
+.submenu:hover .submenu-content {
+  display: block;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+section h2 {
+  margin-bottom: 20px;
+  color: #222;
+}
+section p {
+  margin-bottom: 20px;
+}
+
+
+/* Footer */
+footer {
+  background: #333;
+  color: white;
+  text-align: center;   /* ✅ Updated: footer text centered */
+  padding: 20px;
+}
+
+footer a {
+  color: #ffcc00;
+  margin: 0 5px;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+footer p {
+  text-align: center; /* ✅ Updated: Centered the copyright & links */
+}
+
+/* Responsive */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu {
+    flex-direction: column;
+  }
+
+  .submenu-content {
+    position: static;
+  }
+}
