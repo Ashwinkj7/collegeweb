@@ -32,17 +32,14 @@ header .logo img {
 }
 #hero {
   width: 100%;
-  text-align: center; /* centers the image */
-  background: #fff;   /* optional: background behind image */
-  padding: 0;         /* remove extra padding */
+  height: 500px; /* adjust the height */
+  background-image: url('test.png'); /* replace with correct image */
+  background-size: cover;   /* fills full width */
+  background-position: center; /* centers nicely */
+  background-repeat: no-repeat;
+          /* remove extra padding */
 }
 
-#hero img {
-  max-width: 100%;   /* fit inside page width */
-  height: auto;      /* keep aspect ratio */
-  display: block;
-  margin: 0 auto;
-}
 
 header .header-content {
   text-align: right;
@@ -142,3 +139,4 @@ footer p {
     position: static;
   }
 }
+
